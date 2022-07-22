@@ -77,7 +77,7 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Fail" %}
+{% swagger-response status="200: OK" description="Fail" %}
 ```javascript
 {
     "id": 1,
@@ -149,7 +149,7 @@ The array of hash indicated which transaction(s) are allowed to revert
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Fail" %}
+{% swagger-response status="200: OK" description="Fail" %}
 ```javascript
 {
     "jsonrpc":"2.0",
