@@ -88,27 +88,27 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/" baseUrl="" summary="Send Puissant Bundle" %}
+{% swagger method="post" path="/" baseUrl="" summary="Send Puissant" %}
 {% swagger-description %}
-Send multiple Transactions in a bundle, natively in private mode.
+Send multiple Transactions in a group, natively in private mode.
 
 Basically, Txs will still be ordered strictly following descending gasPrice.
 
-A Bundle is a group of txs (must be provided in gasPrice descending order) which will be packed in block strictly in the same order. Those tx in a bundle with exactly same gasPrice will be packed consecutively, but this is **not guaranteed** for the entire bundle
+A Puissant is a group of txs (must be provided in gasPrice descending order) which will be packed in block strictly in the same order. Those txs in one puissant with exactly same gasPrice will be packed **consecutively**, but this is **not guaranteed** for the entire puissant.
 
 Each Tx will be handled fully following validation procedure, including but not limit to signature/nonce/gas/gasPrice etc.
 
-Instead of separately gasPrice checking, the average gasPrice must not be less than gas price floor otherwise the entire bundle will be rejected.
+Instead of separately gasPrice checking, the average gasPrice must not be less than gas price floor otherwise the entire puissant will be rejected.
 
 $$average\ gasPrice = \frac{\sum(gasPrice_i \times e\_gasLimit_i)}{\sum(e\_gasLimit_i)}$$
 
 where
 
-The trust-relay bundle has the higher priority than the normal bundle.
-
 $$\begin{equation} e\_gasLimit_i= \left\{  \begin{aligned} gasLimit_i\qquad if\quad gasPrice_i \le gasPriceFloor   \\ min(21000,gasLimit_i)\qquad if\quad gasPrice_i \gt gasPriceFloor   \\ \end{aligned} \right. \end{equation}$$
 
-If two different bundles conflict, the one with higher average gasPrice will be served.
+If the very first tx in the puissant used less than 21000 gas, the entire puissant will be rejected.
+
+If two different puissants conflict, the one with higher average gasPrice will be served.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" required="true" type="uint64" %}
@@ -132,7 +132,7 @@ Signed transactions (eth_sendRawTransaction style, signed and RLP-encoded)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="params[0].maxTimestamp" type="uint64" required="true" %}
-bundle valid until timestamp reaches. No more than 2 minutes from now
+puissant valid until timestamp reaches. No more than 2 minutes from now
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="params[0].acceptReverting" type="[]TxHash" required="false" %}

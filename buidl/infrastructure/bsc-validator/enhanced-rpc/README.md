@@ -34,7 +34,7 @@ Txs sent to this RPC will remain inside BNB48 validator without being broadcast,
 
 `https://testnet-puissant-bsc.bnb48.club // testnet`
 
-Bundle txs supported while not breaking gasPrice order priority
+Group txs supported while not breaking gasPrice order priority
 
 Powerful tool for programmers only, you can't use this URL as an ordinary wallet RPC.
 
