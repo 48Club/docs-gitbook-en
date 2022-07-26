@@ -100,7 +100,7 @@ Gas price of the first tx in puissant must not be less than [#query-gas-price-fl
 
 If the very first tx in the puissant used less than 21000 gas, the entire puissant will be rejected.
 
-If two different puissants conflict, the one whose first tx has higher average gasPrice will be served.
+If two different puissants conflict, the one whose first tx has higher gasPrice will be served.
 
 If multiple first-tx-of-puissant share one identical sender, all these puissants will be dropped except one.
 {% endswagger-description %}
