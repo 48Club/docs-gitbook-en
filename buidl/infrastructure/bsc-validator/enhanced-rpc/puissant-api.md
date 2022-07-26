@@ -92,23 +92,17 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 {% swagger-description %}
 Send multiple Transactions in a group, natively in private mode.
 
-Basically, Txs will still be ordered strictly following descending gasPrice.
-
-A Puissant is a group of txs (must be provided in gasPrice descending order) which will be packed in block strictly in the same order. Those txs in one puissant with exactly same gasPrice will be packed **consecutively**, but this is **not guaranteed** for the entire puissant.
+Txs in a puissant should be ordered following descending gasPrice, they will be packed(if accepted) in block in the same order. Those txs with exactly same gasPrice will be packed **consecutively**, but this is **not guaranteed** for the entire puissant.
 
 Each Tx will be handled fully following validation procedure, including but not limit to signature/nonce/gas/gasPrice etc.
 
-Instead of separately gasPrice checking, the average gasPrice must not be less than gas price floor otherwise the entire puissant will be rejected.
-
-$$average\ gasPrice = \frac{\sum(gasPrice_i \times e\_gasLimit_i)}{\sum(e\_gasLimit_i)}$$
-
-where
-
-$$\begin{equation} e\_gasLimit_i= \left\{  \begin{aligned} gasLimit_i\qquad if\quad gasPrice_i \le gasPriceFloor   \\ min(21000,gasLimit_i)\qquad if\quad gasPrice_i \gt gasPriceFloor   \\ \end{aligned} \right. \end{equation}$$
+The first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") otherwise the entire puissant will be rejected.
 
 If the very first tx in the puissant used less than 21000 gas, the entire puissant will be rejected.
 
-If two different puissants conflict, the one with higher average gasPrice will be served.
+If two different puissants conflict, the one whose first tx has higher average gasPrice will be served.
+
+If multiple first-tx-of-puissant share one identical sender, all these puissants will be dropped except one.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" required="true" type="uint64" %}
