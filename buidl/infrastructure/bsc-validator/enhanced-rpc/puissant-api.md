@@ -96,7 +96,7 @@ Txs in a puissant should be ordered following descending gasPrice, they will be 
 
 Each Tx will be handled fully following validation procedure, including but not limit to signature/nonce/gas/gasPrice etc.
 
-The first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") otherwise the entire puissant will be rejected.
+Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") otherwise the entire puissant will be rejected.
 
 If the very first tx in the puissant used less than 21000 gas, the entire puissant will be rejected.
 
