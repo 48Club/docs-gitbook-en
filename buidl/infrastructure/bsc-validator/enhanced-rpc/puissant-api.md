@@ -100,7 +100,7 @@ All txs in the puissant will be packed in block in the same order unless one of 
 
 **CASE EXPIRED**
 
-When current time  > `maxTimestamp` , the puissant will expire.
+When current time  > `maxTimestamp` , or any tx in the puissant was included in previous block, the puissant expires.
 
 **CASE INVALID**
 
