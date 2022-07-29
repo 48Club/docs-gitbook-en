@@ -96,7 +96,7 @@ Puissant is natively in private mode.
 
 Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") and gas limit of this tx must not be less than 21000, otherwise the entire puissant will be **failed instantly**.
 
-All txs in the puissant will be packed in block in the same order unless one of following cases:
+All txs in the puissant will be packed in the next block sealed by our validator in the same order, unless in one of following cases no txs will be packed:
 
 **CASE EXPIRED**
 
@@ -118,7 +118,7 @@ When the puissant contains one tx which is also in another puissant with higher 
 
 
 
-Once sealed, those txs with exactly same gasPrice will be packed **consecutively**, but this is **not guaranteed** for the entire puissant.
+Once packed, those txs with exactly same gasPrice will be placed **consecutively**, but this is **not guaranteed** for the entire puissant.
 
 If multiple first-tx-of-puissant share one identical sender, it will be considered as spamming the puissant service, all these puissants will be ignored except one.
 {% endswagger-description %}
