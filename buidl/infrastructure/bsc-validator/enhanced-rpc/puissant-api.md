@@ -90,19 +90,37 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 
 {% swagger method="post" path="/" baseUrl="" summary="Send Puissant" %}
 {% swagger-description %}
-Send multiple Transactions in a group, natively in private mode.
+Send multiple Transactions in a group, called a puissant.
 
-Txs in a puissant should be ordered following descending gasPrice, they will be packed(if accepted) in block in the same order. Those txs with exactly same gasPrice will be packed **consecutively**, but this is **not guaranteed** for the entire puissant.
+Puissant is natively in private mode.
 
-Each Tx will be handled fully following validation procedure, including but not limit to signature/nonce/gas/gasPrice etc.
+Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") otherwise the entire puissant will be **failed instantly**.
 
-Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") otherwise the entire puissant will be rejected.
+All txs in the puissant will be packed in block in the same order unless one of following cases:
 
-If the very first tx in the puissant used less than 21000 gas, the entire puissant will be rejected.
+**CASE EXPIRED**
 
-If two different puissants conflict, the one whose first tx has higher gasPrice will be served.
+When current time  > `maxTimestamp` , the puissant will expire.
 
-If multiple first-tx-of-puissant share one identical sender, all these puissants will be dropped except one.
+**CASE INVALID**
+
+When gasPrice of the first tx in the bundle is less than 21000, the puissant will be considered invalid.
+
+**CASE REVERTED**
+
+When one tx of the puissant is reverted (for any reason) and this tx-hash is not in `acceptReverting` parameter**.**
+
+**CASE BEATEN**
+
+When the puissant contains one tx which is also in another puissant with higher first-tx-gas-price, the other puissant will be served with p**riority.**
+
+
+
+
+
+Once sealed, those txs with exactly same gasPrice will be packed **consecutively**, but this is **not guaranteed** for the entire puissant.
+
+If multiple first-tx-of-puissant share one identical sender, it will be considered as spamming the puissant service, all these puissants will be ignored except one.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" required="true" type="uint64" %}
