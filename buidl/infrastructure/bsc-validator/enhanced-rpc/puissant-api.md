@@ -94,7 +94,7 @@ Send multiple Transactions in a group, called a puissant.
 
 Puissant is natively in private mode.
 
-Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") otherwise the entire puissant will be **failed instantly**.
+Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") and gas limit of this tx must not be less than 21000, otherwise the entire puissant will be **failed instantly**.
 
 All txs in the puissant will be packed in block in the same order unless one of following cases:
 
@@ -112,7 +112,7 @@ When one tx of the puissant is reverted (for any reason) and this tx-hash is not
 
 **CASE BEATEN**
 
-When the puissant contains one tx which is also in another puissant with higher first-tx-gas-price, the other puissant will be served with p**riority.**
+When the puissant contains one tx which is also in another puissant with higher first-tx-gas-price, the other puissant will be served with priority**.**
 
 
 
