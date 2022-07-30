@@ -154,9 +154,12 @@ The array of hash indicated which transaction(s) are allowed to revert
 {% swagger-response status="200: OK" description="Success" %}
 ```javascript
 {
-    "jsonrpc": "2.0",
-    "id": 48,
-    "result": null
+    "jsonrpc":"2.0",
+    "id":1,
+    "error":{
+        "code":-32000,
+        "message":"known sender"
+    }
 }
 ```
 {% endswagger-response %}
@@ -165,8 +168,8 @@ The array of hash indicated which transaction(s) are allowed to revert
 ```javascript
 {
     "jsonrpc":"2.0",
-    "id":48,
-    "result": "0x" // error for hexnull
+    "id":1,
+    "result":"a77f8997-0fc1-4d42-94b2-09d4f79c667d"
 }
 ```
 {% endswagger-response %}
