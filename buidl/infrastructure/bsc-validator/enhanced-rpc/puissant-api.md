@@ -151,7 +151,7 @@ puissant valid until timestamp reaches. No more than 2 minutes from now
 The array of hash indicated which transaction(s) are allowed to revert
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Success" %}
+{% swagger-response status="200: OK" description="Fail" %}
 ```javascript
 {
     "jsonrpc":"2.0",
@@ -164,7 +164,7 @@ The array of hash indicated which transaction(s) are allowed to revert
 ```
 {% endswagger-response %}
 
-{% swagger-response status="200: OK" description="Fail" %}
+{% swagger-response status="200: OK" description="Success" %}
 ```javascript
 {
     "jsonrpc":"2.0",
