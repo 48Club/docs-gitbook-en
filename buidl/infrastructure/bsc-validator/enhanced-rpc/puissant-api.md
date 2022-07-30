@@ -104,7 +104,7 @@ When current time  > `maxTimestamp` , or any tx in the puissant was included in 
 
 **CASE INVALID**
 
-When gasPrice of the first tx in the bundle is less than 21000, the puissant will be considered invalid.
+When gasUsed of the first tx in the bundle is less than 21000, the puissant will be considered invalid.
 
 **CASE REVERTED**
 
