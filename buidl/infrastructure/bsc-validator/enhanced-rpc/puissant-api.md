@@ -100,7 +100,7 @@ All txs in the puissant will be packed in the next block sealed by our validator
 
 **CASE EXPIRED**
 
-When current time  > `maxTimestamp` , or any tx in the puissant was included in previous block, the puissant expires.
+When current time > `maxTimestamp` , or any tx in the puissant was included in previous block, the puissant expires.
 
 **CASE INVALID**
 
@@ -108,15 +108,11 @@ When gasUsed of the first tx in the bundle is less than 21000, the puissant will
 
 **CASE REVERTED**
 
-When one tx of the puissant is reverted (for any reason) and this tx-hash is not in `acceptReverting` parameter**.**
+When one tx of the puissant is reverted (for any reason) and this tx-hash is not in `acceptReverting` parameter\*\*.\*\*
 
 **CASE BEATEN**
 
-When the puissant contains one tx which is also in another puissant with higher first-tx-gas-price, the other puissant will be served with priority**.**
-
-
-
-
+When the puissant contains one tx which is also in another puissant with higher first-tx-gas-price, the other puissant will be served with priority\*\*.\*\*
 
 Once packed, those txs with exactly same gasPrice will be placed **consecutively**, but this is **not guaranteed** for the entire puissant.
 
@@ -220,45 +216,6 @@ The array of hash indicated which transaction(s) are allowed to revert
                 "created":"2022-08-02T21:43:53+08:00"
             }
         ],
-        "created":"2022-08-02T21:43:53+08:00"
-    }
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="404: Not Found" description="" %}
-```javascript
-{
-    "message":"tx not found",
-    "status":404
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="500: Internal Server Error" description="" %}
-```javascript
-{
-    "message":"error info",
-    "status":500
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="get" path="/api/v1/puissant/tx/:tx_hash" baseUrl="https://explorer.bnb48.club" summary="query status of txs included in puissant" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    "message":"",
-    "status":200,
-    "value":{
-        "tx_hash":"tx_hash",
-        "status":"innocent noRun",
-        "accept_revert":false,
         "created":"2022-08-02T21:43:53+08:00"
     }
 }
