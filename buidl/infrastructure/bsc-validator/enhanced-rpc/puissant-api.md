@@ -174,3 +174,112 @@ The array of hash indicated which transaction(s) are allowed to revert
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger method="get" path="/api/v1/ping" baseUrl="https://explorer.bnb48.club" summary="query puissant api availability" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "message":"pong",
+    "status":200
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/api/v1/puissant/:uuid" baseUrl="https://explorer.bnb48.club" summary="query specific puissant status" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "message":"",
+    "status":200,
+    "value":{
+        "uuid":":uuid",
+        "block":"",
+        "validator":"",
+        "status":"Pending in puissant queue.",
+        "info":"OK.",
+        "txs":[
+            {
+                "tx_hash":"tx_hash",
+                "status":"innocent noRun",
+                "accept_revert":false,
+                "created":"2022-08-02T21:43:53+08:00"
+            },
+            {
+                "tx_hash":"tx_hash",
+                "status":"innocent noRun",
+                "accept_revert":false,
+                "created":"2022-08-02T21:43:53+08:00"
+            }
+        ],
+        "created":"2022-08-02T21:43:53+08:00"
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="" %}
+```javascript
+{
+    "message":"tx not found",
+    "status":404
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="" %}
+```javascript
+{
+    "message":"error info",
+    "status":500
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/api/v1/puissant/tx/:tx_hash" baseUrl="https://explorer.bnb48.club" summary="query status of txs included in puissant" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "message":"",
+    "status":200,
+    "value":{
+        "tx_hash":"tx_hash",
+        "status":"innocent noRun",
+        "accept_revert":false,
+        "created":"2022-08-02T21:43:53+08:00"
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="" %}
+```javascript
+{
+    "message":"tx not found",
+    "status":404
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="" %}
+```javascript
+{
+    "message":"error info",
+    "status":500
+}
+```
+{% endswagger-response %}
+{% endswagger %}
