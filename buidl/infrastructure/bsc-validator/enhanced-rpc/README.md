@@ -4,6 +4,8 @@ description: 'Foncé: [Fr] Dark. Puissant: [Fr] Powerful.'
 
 # Enhanced RPC
 
+No effort was made to hide user footprint.&#x20;
+
 <details>
 
 <summary>Private transaction For end-user</summary>
