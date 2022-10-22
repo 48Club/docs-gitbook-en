@@ -24,7 +24,7 @@ Txs sent to this RPC will remain inside BNB48 validator without being broadcast,
 #### Cons:&#x20;
 
 1. Mighty slow confirmation.
-2. Higher gasPrice requirement, currently 15gwei.
+2. Higher gasPrice requirement, currently 60gwei.
 
 </details>
 
@@ -43,3 +43,5 @@ Powerful tool for programmers only, you can't use this URL as an ordinary wallet
 Check [puissant-api.md](puissant-api.md "mention")for details.
 
 </details>
+
+Watch [https://github.com/BNB48Club/puissant\_service](https://github.com/BNB48Club/puissant\_service) for issues.
