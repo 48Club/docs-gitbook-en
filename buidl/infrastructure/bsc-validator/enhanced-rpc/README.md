@@ -14,7 +14,7 @@ Notice no effort was made to hide user footprint in these services.&#x20;
 
 <summary>koge-rpc-bsc, gas discount for KOGE holder</summary>
 
-Hold $KOGE to enjoy 80% (at most ) discount of BSC gas fee !&#x20;
+Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c5528) to enjoy 80% (at most ) discount of BSC gas fee !&#x20;
 
 As far as：&#x20;
 
@@ -26,6 +26,13 @@ You can enjoy a gas discount then. The more $KOGE you hold, the more discount yo
 Although the lowest gasPrice we accept could be as low as **1 gwei**, it is not always the case especially when the tx costs too much gas. In which case, your tx will be rejected with a recommended gasPrice in the error msg, just set the new gasPrice and send your tx again.
 
 Since not all the validators seal txs below 5gwei (while BNB48 and partners do), gas discounted tx may be sealed a bit slower, it's total normal.
+
+**How KOGE balance impact discount:**
+
+1. Hold not more than 100 Koge, be allowed to send tx under 240K gas at 1gwei (80% discount), or tx under 480k gas at 3 gwei (40% discount). In another word, the more discount the less gasLimit, the less discount the more gasLimit.
+2. Every 10 times more KOGE balance double the discount. E.g. 1000 KOGE allows you to send tx with 480k gas at 1 gwei, 10000 KOGE allows 960k etc.
+
+
 
 </details>
 

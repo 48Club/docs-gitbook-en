@@ -8,7 +8,7 @@ description: Designed as Standard RPC Style Endpoint
 {% swagger-description %}
 Override of original eth\_gasPrice endpoint.
 
-Query the minimum gas price request for sending transactions via puissant. Transactions sent to puissant with a GasPrice below the floor will be rejected, please make sure your gasPrice (or averaged GasPrice) is equal to or greater than the result.
+Query the minimum gas price request for sending transactions via puissant (also applied for Foncé). Transactions sent to puissant with a GasPrice below the floor will be rejected, please make sure your gasPrice (or averaged GasPrice) is equal to or greater than the result.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
@@ -42,7 +42,7 @@ Query the minimum gas price request for sending transactions via puissant. Trans
 {% swagger-description %}
 Send a Raw Transaction in private mode.
 
-Transaction sent to this RPC will remain inside this validator without being broadcast, thus will not be packed or only packed by this validator.
+Transaction sent to this RPC will remain inside BNB48 and partner validators without being broadcast, thus will not be packed or only packed by this validator.
 
 Transaction will be handled fully following validation procedure, including but not limit to signature/nonce/gas/gasPrice/balance etc.
 {% endswagger-description %}
@@ -92,11 +92,9 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 {% swagger-description %}
 Send multiple Transactions in a group, called a puissant.
 
-Puissant is natively in private mode.
-
 Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") and gas limit of this tx must not be less than 21000, otherwise the entire puissant will be **failed instantly**.
 
-All txs in the puissant will be packed in the next block sealed by our validator in the same order, unless in one of following cases no txs will be packed:
+All txs in the puissant will be packed in the next block sealed by our validators in the same order, unless in one of following cases no txs will be packed:
 
 **CASE EXPIRED**
 
