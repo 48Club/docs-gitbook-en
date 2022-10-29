@@ -14,7 +14,7 @@ Notice no effort was made to hide user footprint in these services.&#x20;
 
 <summary>koge-rpc-bsc, gas discount for KOGE holder</summary>
 
-Hold [$KOGE](https://twitter.com/search?q=%24KOGE\&src=cashtag\_click) to enjoy 80% (at most ) discount of BSC gas fee !&#x20;
+Hold $KOGE to enjoy 80% (at most ) discount of BSC gas fee !&#x20;
 
 As far as：&#x20;
 

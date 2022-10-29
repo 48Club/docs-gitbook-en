@@ -92,9 +92,11 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 {% swagger-description %}
 Send multiple Transactions in a group, called a puissant.
 
+Puissant is natively in private mode.
+
 Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") and gas limit of this tx must not be less than 21000, otherwise the entire puissant will be **failed instantly**.
 
-All txs in the puissant will be packed in the next block sealed by our validators in the same order, unless in one of following cases no txs will be packed:
+All txs in the puissant will be packed in the next block sealed by our validator in the same order, unless in one of following cases no txs will be packed:
 
 **CASE EXPIRED**
 
