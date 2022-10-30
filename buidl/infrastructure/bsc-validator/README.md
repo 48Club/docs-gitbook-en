@@ -7,4 +7,6 @@ RPC URL:
 ```
 https://rpc-bsc.bnb48.club
 wss://rpc-bsc.bnb48.club
+
+https://testnet-rpc-bsc.bnb48.club \\ testnet
 ```
