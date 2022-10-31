@@ -14,25 +14,20 @@ Notice no effort was made to hide user footprint in these services.&#x20;
 
 <summary>koge-rpc-bsc, gas discount for KOGE holder</summary>
 
-Hold 1 [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c5528) to enjoy 80% (at most ) discount of BSC gas fee !&#x20;
+Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c5528) to enjoy discount of BSC gas fee !&#x20;
 
 As far as：&#x20;
 
-1. There is KOGE in your wallet.&#x20;
+1. There is [48er-nft.md](../../../../dao/governance/voting/48er-nft.md "mention") or at least 1 KOGE in your wallet.&#x20;
 2. Use this RPC -> [http://koge-rpc-bsc.bnb48.club](https://t.co/5859ob3MhI)
 
-You can enjoy a gas discount then. The more $KOGE you hold, the more discount you get.
+You can enjoy a gas discount up to 80% then.&#x20;
 
-Although the lowest gasPrice we accept could be as low as **1 gwei**, it is not always the case especially when the tx costs too much gas. In which case, your tx will be rejected with a recommended gasPrice in the error msg, just set the new gasPrice and send your tx again.
+Please notice there are conditions for this discount. The more gasLimit your tx has, the more KOGE you need to be eligible (unless you hold a 48er NFT, that's the silver bullet).
 
-Since not all the validators seal txs below 5gwei (while BNB48 and partners do), gas discounted tx may be sealed a bit slower, it's total normal.
+When the gasLimit exceeds your eligible quota, you can hold more KOGE or set a higher gasPrice. A recommended gasPrice will be included in the error msg, just set the new gasPrice and send your tx again.
 
-**How KOGE balance impact discount:**
-
-1. Hold at least 1 KOGE not more than 100 Koge, be allowed to send tx under 240K gas at 1gwei (80% discount), or tx under 480k gas at 3 gwei (40% discount). In another word, the more discount the less gasLimit, the less discount the more gasLimit.
-2. Every 10 times more KOGE balance double the discount. E.g. 1000 KOGE allows you to send tx with 480k gas at 1 gwei, 10000 KOGE allows 960k etc.
-
-
+Since not all the validators seal txs below 5gwei (while BNB48 and partners do), gas discounted tx may be sealed a bit slower, it's totally normal.
 
 </details>
 
