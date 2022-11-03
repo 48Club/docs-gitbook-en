@@ -12,7 +12,7 @@ Once the proposal finishes its voting period(quorum met), the proposer will get 
 
 ## Propose
 
-Everyone can make a proposal if only and only if there is a [48er NFT](48er-nft.md) held in the wallet, only the proposer must contribute to the proposal pool, 4.8 KOGE at least.
+Everyone can make a proposal if only and only if there is a [48er NFT](48er-nft.md) held in the wallet, only the proposer must contribute to the proposal pool, 48 KOGE at least.
 
 ## Vote
 
