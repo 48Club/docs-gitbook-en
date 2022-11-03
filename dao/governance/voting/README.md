@@ -2,11 +2,13 @@
 
 The vote occurs on [BNB48 DAO](https://www.bnb48.club).&#x20;
 
+Notice all numbers below are subjected to DAO decision thus could differ with actual value on chain.
+
 The club will periodically allocate KOGE into a voting incentive pool. Both proposers and voters will be eligible for incentives.
 
-Every time a proposal is created, a dedicated proposal pool will be too. A default 4.8% share from the total pool will be extracted with a floor of 48 KOGE and a ceiling of 480 KOGE.&#x20;
+Every time a proposal is created, a dedicated proposal pool will be too. A default 4.8% share from the total pool will be extracted with a floor of 480 KOGE and a ceiling of 1000 KOGE.&#x20;
 
-Once the proposal finishes its voting period(quorum met), the proposer will get 4.8% from the proposal pool and then all voters split the rest according to respectively voting power. Otherwise, 4.8 KOGE will be returned and claimable by anyone.
+Once the proposal finishes its voting period(quorum met), the proposer will get 8% from the proposal pool and then all voters split the rest according to respectively voting power. Otherwise, 4.8 KOGE will be returned and claimable by anyone.
 
 ## Propose
 
