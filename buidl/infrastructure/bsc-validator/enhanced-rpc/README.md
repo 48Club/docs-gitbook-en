@@ -35,9 +35,7 @@ Since not all the validators seal txs below 5gwei (while BNB48 and partners do),
 
 <summary>fonce-bsc, private transaction For end-user</summary>
 
-Mainnet: `https://fonce-bsc.bnb48.club`
-
-Testnet: `https://testnet-fonce-bsc.bnb48.club`
+`https://fonce-bsc.bnb48.club`
 
 Txs sent to this RPC will remain inside BNB48 and partners without being broadcasted, thus will not be packed or only packed by BNB48 and partners.
 
@@ -57,9 +55,7 @@ Txs sent to this RPC will remain inside BNB48 and partners without being broadca
 
 <summary>puissant-bsc, grouped txs for professional programmer</summary>
 
-`https://puissant-bsc.bnb48.club //mainnet`
-
-`https://testnet-puissant-bsc.bnb48.club // testnet`
+`https://puissant-bsc.bnb48.club`
 
 Puissant is a service where grouped txs are supported as an atomic operation without breaking gasPrice based ordering. Puissant is natively in private mode.
 
