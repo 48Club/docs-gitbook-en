@@ -23,7 +23,18 @@ As far as：&#x20;
 
 You can enjoy a gas discount up to 80% then.&#x20;
 
-Please notice there are conditions for this discount. The more gasLimit your tx has, the more KOGE you need to be eligible (unless you hold a 48er NFT, that's the silver bullet).
+Please notice there are conditions for this discount. The more gasLimit your tx has, the more KOGE you need to be eligible (Each held 48er NFT is considered as 1,000,000 KOGE holding).
+
+```
+KOGE      max gasLimit for 1gwei discount
+<1        0
+1~10      240000
+100       480000
+1000      960000
+10000     1920000
+...
+//10 times holding double the max gasLimit
+```
 
 When the gasLimit exceeds your eligible quota, you can hold more KOGE or set a higher gasPrice. A recommended gasPrice will be included in the error msg, just set the new gasPrice and send your tx again.
 
