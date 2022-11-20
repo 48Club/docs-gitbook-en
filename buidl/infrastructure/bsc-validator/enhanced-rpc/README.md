@@ -18,12 +18,18 @@ Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c552
 
 As far as：&#x20;
 
-1. There is [48er-nft.md](../../../../dao/governance/voting/48er-nft.md "mention") or at least 1 KOGE in your wallet.&#x20;
+1. There is at least 1 KOGE in your wallet(Including DAO-staked and [48er-nft.md](../../../../dao/governance/voting/48er-nft.md "mention")).&#x20;
 2. Use this RPC -> [https://koge-rpc-bsc.bnb48.club](https://t.co/5859ob3MhI)
 
 You can enjoy a gas discount up to 80% then.&#x20;
 
-Please notice there are conditions for this discount. The more gasLimit your tx has, the more KOGE you need to be eligible (Each held 48er NFT is considered as 1,000,000 KOGE holding).
+Please notice there are conditions for this discount. The more gasLimit your tx has, the more KOGE you need to be eligible
+
+Effective KOGE balance includes:
+
+1. $KOGE in your wallet
+2. $KOGE staked to [Broken link](broken-reference "mention")
+3. Each held 48er NFT is considered as 1,000,000 KOGE holding.
 
 ```
 KOGE      max gasLimit for 1gwei discount
