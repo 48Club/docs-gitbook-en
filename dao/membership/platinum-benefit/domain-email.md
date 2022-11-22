@@ -6,8 +6,6 @@ Just drop a line to [domain\_email@bnb48.club](mailto:domain\_email@bnb48.club) 
 
 1. first name / last name
 2. prefered username(s)
-3. Another email address to receive initial account credential.
-
-We will reply to you with your login info.&#x20;
+3. Secondary email address where you can receive initial sign-in instructions.
 
 Do set your own security information, we don't provide account recovery service.
