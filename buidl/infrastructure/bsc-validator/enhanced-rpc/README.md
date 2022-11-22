@@ -18,7 +18,7 @@ Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c552
 
 As far as：&#x20;
 
-1. There is at least 1 KOGE in your wallet(Including DAO-staked and [48er-nft.md](../../../../dao/governance/voting/48er-nft.md "mention")).&#x20;
+1. There is at least 1 KOGE in your wallet(Including DAO-staked and [48er-nft.md](../../../../dao/governance/48er-nft.md "mention")).&#x20;
 2. Use this RPC -> [https://koge-rpc-bsc.bnb48.club](https://t.co/5859ob3MhI)
 
 You can enjoy a gas discount up to 80% then.&#x20;

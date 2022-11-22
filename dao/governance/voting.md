@@ -1,6 +1,6 @@
 # Voting
 
-The vote occurs on [BNB48 DAO](https://www.bnb48.club).&#x20;
+The vote occurs on [BNB48 DAO](https://www.bnb48.club). Only staked KOGE represents voting power. Notice that once staked, you have to wait 7 days before being able to unstake. Another 7 days is required to withdraw un-staked KOGE.
 
 Notice all numbers below are subjected to DAO decision thus could differ with actual value on chain.
 
@@ -16,5 +16,5 @@ Everyone can make a proposal if only and only if there is a [48er NFT](48er-nft.
 
 ## Vote
 
-Everyone can vote for/against a proposal if only and only if there is [KOGE ](koge-token.md)staked from the wallet.
+Everyone can vote for/against a proposal if only and only if there is [KOGE ](../koge-token/)staked from the wallet.
 

@@ -1,22 +1,17 @@
 # Table of contents
 
-## Reference
-
-* [LitePaper](README.md)
-* [F.A.Q.](reference/f.a.q..md)
-
 ## DAO
 
+* [F.A.Q.](README.md)
+* [KOGE Token](dao/koge-token/README.md)
+  * [LitePaper](dao/koge-token/readme.md)
+  * [Platinum Benefit](dao/koge-token/platinum-benefit/README.md)
+    * [Domain Email](dao/koge-token/platinum-benefit/domain-email.md)
+    * [Free VPN](dao/koge-token/platinum-benefit/free-vpn.md)
 * [Governance](dao/governance/README.md)
-  * [Voting](dao/governance/voting/README.md)
-    * [KOGE Token](dao/governance/voting/koge-token.md)
-    * [48er NFT](dao/governance/voting/48er-nft.md)
+  * [Voting](dao/governance/voting.md)
+  * [48er NFT](dao/governance/48er-nft.md)
   * [Committee](dao/governance/committee.md)
-* [Membership](dao/membership/README.md)
-  * [Platinum Benefit](dao/membership/platinum-benefit/README.md)
-    * [Domain Email](dao/membership/platinum-benefit/domain-email.md)
-    * [Free VPN](dao/membership/platinum-benefit/free-vpn.md)
-  * [Merch](dao/membership/merch.md)
 
 ## BUIDL
 
