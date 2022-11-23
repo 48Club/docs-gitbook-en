@@ -6,6 +6,7 @@
 * [KOGE Token](dao/koge-token/README.md)
   * [LitePaper](dao/koge-token/readme.md)
   * [Platinum Benefit](dao/koge-token/platinum-benefit/README.md)
+    * [Exclusive Chat](dao/koge-token/platinum-benefit/exclusive-chat.md)
     * [Domain Email](dao/koge-token/platinum-benefit/domain-email.md)
     * [Free VPN](dao/koge-token/platinum-benefit/free-vpn.md)
 * [Governance](dao/governance/README.md)
