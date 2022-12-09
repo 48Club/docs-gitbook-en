@@ -4,7 +4,7 @@ description: 'Puissant: [Fr] Powerful.'
 
 # Enhanced RPC
 
-Following enhanced RPCs were implemented for extra functionalities, partner validators other than BNB48 alone also serve.
+Following enhanced RPCs were implemented for extra functionalities, partner validators other than BNB48 alone also serve. They work in privacy mode too.
 
 Check [github ](https://github.com/BNB48Club/enhanced\_rpc)for details and issues. Consult _rpc@bnb48.club_ for partnership.
 
@@ -31,16 +31,18 @@ Effective KOGE balance includes:
 2. $KOGE staked to [Broken link](broken-reference "mention").
 3. Each held 48er NFT is considered as 1,000,000 KOGE holding.
 
-```
-KOGE      max gasLimit for 1gwei discount
-<1        0
+<pre><code>Effective KOGE or eKOGE
+= max(10,Koge Balance) + Koge Staked + 48erNFTBalance * 1,000,000
+
+<strong>eKOGE      max gasLimit for 1gwei discount
+</strong>&#x3C;1        0
 1~10      240000
 100       480000
 1000      960000
 10000     1920000
 ...
 //10 times holding double the max gasLimit
-```
+</code></pre>
 
 When the gasLimit exceeds your eligible quota, you can hold more KOGE or set a higher gasPrice. A recommended gasPrice will be included in the error msg, just set the new gasPrice and send your tx again.
 
