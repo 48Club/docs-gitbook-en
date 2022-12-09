@@ -1,5 +1,5 @@
 ---
-description: 'Foncé: [Fr] Dark. Puissant: [Fr] Powerful.'
+description: 'Puissant: [Fr] Powerful.'
 ---
 
 # Enhanced RPC
@@ -18,7 +18,7 @@ Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c552
 
 As far as：&#x20;
 
-1. There is at least 1 KOGE in your wallet(Including DAO-staked and [48er-nft.md](../../../../dao/governance/48er-nft.md "mention")).&#x20;
+1. There is at least 1 KOGE in your wallet(Including wallet balance, DAO-staked and [48er-nft.md](../../../../dao/governance/48er-nft.md "mention")).&#x20;
 2. Use this RPC -> [https://koge-rpc-bsc.bnb48.club](https://t.co/5859ob3MhI)
 
 You can enjoy a gas discount up to 80% then.&#x20;
@@ -27,8 +27,8 @@ Please notice there are conditions for this discount. The more gasLimit your tx 
 
 Effective KOGE balance includes:
 
-1. $KOGE in your wallet
-2. $KOGE staked to [Broken link](broken-reference "mention")
+1. $KOGE in your wallet, up to 10.
+2. $KOGE staked to [Broken link](broken-reference "mention").
 3. Each held 48er NFT is considered as 1,000,000 KOGE holding.
 
 ```
@@ -45,26 +45,6 @@ KOGE      max gasLimit for 1gwei discount
 When the gasLimit exceeds your eligible quota, you can hold more KOGE or set a higher gasPrice. A recommended gasPrice will be included in the error msg, just set the new gasPrice and send your tx again.
 
 Since not all the validators seal txs below 5gwei (while BNB48 and partners do), gas discounted tx may be sealed a bit slower, it's totally normal.
-
-</details>
-
-<details>
-
-<summary>fonce-bsc, private transaction For end-user</summary>
-
-`https://fonce-bsc.bnb48.club`
-
-Txs sent to this RPC will remain inside BNB48 and partners without being broadcasted, thus will not be packed or only packed by BNB48 and partners.
-
-#### Pros:&#x20;
-
-1. Front-run-resisted because arb-bot can't see your tx in advance of block sealing.
-2. Wallet transparency. No programming skill is needed, just fill this RPC URL in your wallet.
-
-#### Cons:&#x20;
-
-1. Since only BNB48 and partners do the sealing for fonce, txs may be sealed a bit slower, it's total normal.
-2. Higher gasPrice requirement, [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention")
 
 </details>
 

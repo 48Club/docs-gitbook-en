@@ -23,7 +23,6 @@
       * [Puissant SDK](buidl/infrastructure/bsc-validator/enhanced-rpc/puissant-sdk.md)
   * [BSC Snapshots](buidl/infrastructure/bsc-snapshots.md)
   * [Test BNB Faucet](buidl/infrastructure/test-bnb-faucet.md)
-  * [Kava Validator](buidl/infrastructure/kava-validator.md)
 * [48 Grant](buidl/48-grant/README.md)
   * [Research and Rating](buidl/48-grant/research-and-rating.md)
   * [Portfolio](buidl/48-grant/portfolio.md)
