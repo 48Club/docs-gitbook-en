@@ -28,7 +28,7 @@ Please notice there are conditions for this discount. The more gasLimit your tx 
 Effective KOGE balance includes:
 
 1. $KOGE in your wallet, up to 10.
-2. $KOGE staked to [Broken link](broken-reference "mention").
+2. $KOGE staked to [DAO](https://www.bnb48.club/staking).
 3. Each held 48er NFT is considered as 1,000,000 KOGE holding.
 
 <pre><code>Effective KOGE or eKOGE
