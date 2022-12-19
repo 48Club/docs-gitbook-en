@@ -1,8 +1,8 @@
 # Domain Email
 
-Get your _**username**_**@bnb48.club** email now!
+Get your _**username**_**@48.club** email now!
 
-Just drop a line to [domain\_email@bnb48.club](mailto:domain\_email@bnb48.club) with your:
+Just drop a line to [domain\_email@48.club](mailto:domain\_email@bnb48.club) with your:
 
 1. First name / last name
 2. Prefered username(s)

@@ -1,25 +1,25 @@
 # F.A.Q.
 
 {% hint style="info" %}
-**Where is BNB48's headquarters?**
+**Where is 48 Club's headquarters?**
 
-BNB48 runs completely decentralized.
+48 Club runs completely decentralized.
 {% endhint %}
 
 {% hint style="info" %}
-**Is BNB48 a whales club?**
+**Is 48 Club a whales club?**
 
-Although many whales are members of BNB48, it's not a mandatory membership qualification.
+Although many whales are members of 48 Club, it's not a mandatory membership qualification.
 {% endhint %}
 
 {% hint style="info" %}
-**Does BNB48 belong to Binance?**
+**Does 48 Club belong to Binance?**
 
-No. BNB48 is independent of Binance.
+No.
 {% endhint %}
 
 {% hint style="info" %}
-**Is BNB48 Club financially supported by Binance?**
+**Is 48 Club financially supported by Binance?**
 
-Binance helps BNB48 in many aspects but not financially. Our fund was raisen from community.
+No.
 {% endhint %}

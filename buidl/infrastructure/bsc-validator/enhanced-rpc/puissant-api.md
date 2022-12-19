@@ -4,6 +4,8 @@ description: Designed as Standard RPC Style Endpoint
 
 # Puissant API
 
+Base url if not specified: `https://puissant-bsc.48.club`
+
 {% swagger method="post" path="/" baseUrl="" summary="Query Gas Price Floor" %}
 {% swagger-description %}
 Override of original eth\_gasPrice endpoint.
@@ -169,7 +171,7 @@ The array of hash indicated which transaction(s) are allowed to revert
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/ping" baseUrl="https://explorer.bnb48.club" summary="query puissant api availability" %}
+{% swagger method="get" path="/api/v1/ping" baseUrl="https://explorer.48.club" summary="query puissant api availability" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -184,7 +186,7 @@ The array of hash indicated which transaction(s) are allowed to revert
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/puissant/:uuid" baseUrl="https://explorer.bnb48.club" summary="query specific puissant status" %}
+{% swagger method="get" path="/api/v1/puissant/:uuid" baseUrl="https://explorer.48.club" summary="query specific puissant status" %}
 {% swagger-description %}
 
 {% endswagger-description %}

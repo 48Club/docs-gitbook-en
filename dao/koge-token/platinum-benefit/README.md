@@ -10,5 +10,5 @@ You are eligible for platinum benefit if you meet any of following:
 {% hint style="info" %}
 Bind your wallet address to your telegram account so that we can check the membership threshold.
 
-Visit [https://t.me/bnb48\_bot](https://t.me/bnb48\_bot) to check whether you are qualified.
+Visit [https://t.me/koge\_wallet\_bot](https://t.me/koge\_wallet\_bot) to check whether you are qualified.
 {% endhint %}

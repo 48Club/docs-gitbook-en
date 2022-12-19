@@ -1,6 +1,6 @@
 # 48er NFT
 
-You are required to hold an unoccupied **48er NFT** to propose in BNB48 DAO. One 48er one proposal.
+You are required to hold an unoccupied **48er NFT** to propose in 48 DAO. One 48er one proposal.
 
 The very first 48er NFT is minted by burning 48 KOGE. Each time a 48er is minted, the amount of KOGE required to be burned for the next minting will increase by 4.8%.
 

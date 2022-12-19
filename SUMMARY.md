@@ -17,7 +17,7 @@
 ## BUIDL
 
 * [Infrastructure](buidl/infrastructure/README.md)
-  * [BSC Validator](buidl/infrastructure/bsc-validator/README.md)
+  * [BNB Smart Chain Validator](buidl/infrastructure/bsc-validator/README.md)
     * [Enhanced RPC](buidl/infrastructure/bsc-validator/enhanced-rpc/README.md)
       * [Puissant API](buidl/infrastructure/bsc-validator/enhanced-rpc/puissant-api.md)
       * [Puissant SDK](buidl/infrastructure/bsc-validator/enhanced-rpc/puissant-sdk.md)

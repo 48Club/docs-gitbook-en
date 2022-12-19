@@ -1,6 +1,6 @@
 # Voting
 
-The vote occurs on [BNB48 DAO](https://www.bnb48.club). Only staked KOGE represents voting power. Notice that once staked, you have to wait 7 days before being able to unstake. Another 7 days is required to withdraw un-staked KOGE.
+The vote occurs on [48 DAO](https://www.bnb48.club). Only staked KOGE represents voting power. Notice that once staked, you have to wait 7 days before being able to unstake. Another 7 days is required to withdraw un-staked KOGE.
 
 Notice all numbers below are subjected to DAO decision thus could differ with actual value on chain.
 

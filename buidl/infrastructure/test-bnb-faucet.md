@@ -1,6 +1,6 @@
 # Test BNB Faucet
 
-In case of large amount of test-BNB demand from start-ups, send an email to [testfaucet@bnb48.club](mailto:testfaucet@bnb48.club) with:
+In case of large amount of test-BNB demand from start-ups, send an email to [testfaucet@48.club](mailto:testfaucet@bnb48.club) with:
 
 1. Introduction to your dApp.
 2. The test you are gonna perform.
