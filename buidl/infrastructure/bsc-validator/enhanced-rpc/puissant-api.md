@@ -44,7 +44,7 @@ Query the minimum gas price request for sending transactions via puissant (also 
 {% swagger-description %}
 Send a Raw Transaction in private mode.
 
-Transaction sent to this RPC will remain inside BNB48 and partner validators without being broadcast, thus will not be packed or only packed by this validator.
+Transaction sent to this RPC will remain inside 48 Club and partner validators without being broadcast, thus will not be packed or only packed by this validator.
 
 Transaction will be handled fully following validation procedure, including but not limit to signature/nonce/gas/gasPrice/balance etc.
 {% endswagger-description %}

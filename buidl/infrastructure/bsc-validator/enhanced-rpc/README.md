@@ -6,7 +6,7 @@ description: 'Puissant: [Fr] Powerful.'
 
 Following enhanced RPCs were implemented for extra functionalities, partner validators other than 48 Club alone also serve. They work in privacy mode too.
 
-Check [github ](https://github.com/BNB48Club/enhanced\_rpc)for details and issues. Consult _rpc@bnb48.club_ for partnership.
+Check [github ](https://github.com/BNB48Club/enhanced\_rpc)for details and issues. Consult _rpc@48.club_ for partnership.
 
 Notice no effort was made to hide user footprint in these services.&#x20;
 
@@ -46,7 +46,7 @@ Effective KOGE balance includes:
 
 When the gasLimit exceeds your eligible quota, you can hold more KOGE or set a higher gasPrice. A recommended gasPrice will be included in the error msg, just set the new gasPrice and send your tx again.
 
-Since not all the validators seal txs below 5gwei (while BNB48 and partners do), gas discounted tx may be sealed a bit slower, it's totally normal.
+Since not all the validators seal txs below 5gwei (while 48 Club and partners do), gas discounted tx may be sealed a bit slower, it's totally normal.
 
 </details>
 
