@@ -6,7 +6,7 @@ RPC URL:
 
 ```
 https://rpc-bsc.48.club
-wss://rpc-bsc.48.club
+wss://rpc-bsc.48.club/ws/
 
 https://testnet-rpc-bsc.48.club \\ testnet
 ```
