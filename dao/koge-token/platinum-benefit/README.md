@@ -1,11 +1,12 @@
 # Platinum Benefit
 
-You are eligible for platinum benefit if you meet any of following:
+Meet one of following
 
-1. Staked 500 KOGE.
-2. Hold a 48er NFT.
-3. Hold 500 or more KOGE in Telegram.
-4. Hold a platinum badge(deprecated) in Telegram.
+1. Hold Telegram Platinum badge
+2. Hold 48er NFT in BSC Wallet
+3. Hold 500 Koge or more(including Koge in Telegram + DAO stake Koge + 10 Koge balance at max in BSC wallet)
+
+will be eligible for Platinum Privileges
 
 {% hint style="info" %}
 Bind your wallet address to your telegram account so that we can check the membership threshold.
