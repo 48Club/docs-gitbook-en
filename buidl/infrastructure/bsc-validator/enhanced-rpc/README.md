@@ -48,6 +48,12 @@ When the gasLimit exceeds your eligible quota, you can hold more KOGE or set a h
 
 Since not all the validators seal txs below 5gwei (while 48 Club and partners do), gas discounted tx may be sealed a bit slower, it's totally normal.
 
+\*We only accept no more than 1 discounted transaction from identical sender each block, so please hold your tx until the previous one gets confirmed or rejected.
+
+\*Please don't exploit the service, we have a blacklist mechanism.
+
+\*For partner project (e.g. Alpaca) there's no restriction on gasLimit.
+
 </details>
 
 <details>
