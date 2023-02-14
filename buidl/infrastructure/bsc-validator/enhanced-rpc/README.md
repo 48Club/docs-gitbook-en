@@ -32,7 +32,7 @@ Effective KOGE balance includes:
 3. Each held 48er NFT is considered as 1,000,000 KOGE holding.
 
 <pre><code>Effective KOGE or eKOGE
-= max(10,Koge Balance) + Koge Staked + 48erNFTBalance * 1,000,000
+= min(10,Koge Balance) + Koge Staked + 48erNFTBalance * 1,000,000
 
 <strong>eKOGE      max gasLimit for 1gwei discount
 </strong>&#x3C;1        0
