@@ -4,11 +4,9 @@ description: 'Puissant: [Fr] Powerful.'
 
 # Enhanced RPC
 
-Following enhanced RPCs were implemented for extra functionalities, partner validators other than 48 Club alone also serve. They work in privacy mode too.
+Enhanced RPCs were implemented for extra functionalities, partner validators other than 48 Club alone also serve. They work in privacy mode too.
 
 Check [github ](https://github.com/BNB48Club/enhanced\_rpc)for details and issues. Consult _rpc@48.club_ for partnership.
-
-Notice no effort was made to hide user footprint in these services.&#x20;
 
 <details>
 

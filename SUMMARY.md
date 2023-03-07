@@ -17,7 +17,8 @@
 ## BUIDL
 
 * [Infrastructure](buidl/infrastructure/README.md)
-  * [BNB Smart Chain Validator](buidl/infrastructure/bsc-validator/README.md)
+  * [Terms of Use](buidl/infrastructure/terms-of-use.md)
+  * [BNB Smart Chain](buidl/infrastructure/bsc-validator/README.md)
     * [Enhanced RPC](buidl/infrastructure/bsc-validator/enhanced-rpc/README.md)
       * [Puissant API](buidl/infrastructure/bsc-validator/enhanced-rpc/puissant-api.md)
       * [Puissant SDK](buidl/infrastructure/bsc-validator/enhanced-rpc/puissant-sdk.md)

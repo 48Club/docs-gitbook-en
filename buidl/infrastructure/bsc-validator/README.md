@@ -1,4 +1,4 @@
-# BNB Smart Chain Validator
+# BNB Smart Chain
 
 48 Club is one of several earliest BSC community validators.  [**Stake now**](https://www.bnbchain.org/en/staking/validator/bva1ygrhjdjfyn2ffh5ha5llf5g6l3wxjt29hz9q4s)****
 
@@ -6,9 +6,6 @@ RPC URL:
 
 ```
 https://rpc-bsc.48.club
-wss://rpc-bsc.48.club/ws/
-
-https://testnet-rpc-bsc.48.club \\ testnet
 ```
 
 Mainnet RPC works in privacy mode. Txs sent to mainnet RPC will remain inside 48 Club and partners without being broadcasted, thus will not be packed or only packed by 48 Club and partners.
@@ -21,4 +18,3 @@ Mainnet RPC works in privacy mode. Txs sent to mainnet RPC will remain inside 48
 #### Cons:&#x20;
 
 1. Since only 48 Club and partners do the sealing for fonce, txs may be sealed a bit slower, it's total normal.
-2. Higher gasPrice requirement, [#query-gas-price-floor](enhanced-rpc/puissant-api.md#query-gas-price-floor "mention")
