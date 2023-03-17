@@ -1,14 +1,17 @@
-# BNB Smart Chain
-
-48 Club is one of several earliest BSC community validators.  [**Stake now**](https://www.bnbchain.org/en/staking/validator/bva1ygrhjdjfyn2ffh5ha5llf5g6l3wxjt29hz9q4s)****
-
-RPC URL:
+# BSC RPC
 
 ```
-https://rpc-bsc.48.club
+Network URL:
+    https://rpc-bsc.48.club
+Chain ID:
+    56
+Currency symbol:
+    BNB
+Block explorer URL:
+    https://bscscan.com
 ```
 
-Mainnet RPC works in privacy mode. Txs sent to mainnet RPC will remain inside 48 Club and partners without being broadcasted, thus will not be packed or only packed by 48 Club and partners.
+Mainnet RPC works in **privacy mode**. I.e. txs sent to mainnet RPC will remain inside 48 Club and partners without being broadcasted, thus will not be packed or only packed by 48 Club and partners.
 
 #### Pros:&#x20;
 

@@ -2,9 +2,9 @@
 description: 'Puissant: [Fr] Powerful.'
 ---
 
-# Enhanced RPC
+# Gas fee discounted
 
-Enhanced RPCs were implemented for extra functionalities, partner validators other than 48 Club alone also serve. They work in privacy mode too.
+Discounted RPC work in privacy mode too.
 
 Check [github ](https://github.com/BNB48Club/enhanced\_rpc)for details and issues. Consult _rpc@48.club_ for partnership.
 
@@ -16,8 +16,8 @@ Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c552
 
 As far as：&#x20;
 
-1. There is at least 1 KOGE in your wallet(Including wallet balance, DAO-staked and [48er-nft.md](../../../../dao/governance/48er-nft.md "mention")).&#x20;
-2. Use this RPC -> https://koge-rpc-bsc.48.club
+1. There is at least 1 KOGE in your wallet(Including wallet balance, DAO-staked and [48er-nft.md](../../../dao/governance/48er-nft.md "mention")).&#x20;
+2. Use this RPC -> `https://koge-rpc-bsc.48.club`
 
 You can enjoy a gas discount up to 80% then.&#x20;
 
@@ -51,17 +51,5 @@ Since not all the validators seal txs below 5gwei (while 48 Club and partners do
 \*Please don't exploit the service, we have a blacklist mechanism.
 
 \*For partner project (e.g. Alpaca) there's no restriction on gasLimit.
-
-</details>
-
-<details>
-
-<summary>puissant-bsc, grouped txs for professional programmer</summary>
-
-Puissant is a service where grouped txs are supported as an atomic operation without breaking gasPrice based ordering. Puissant is natively in private mode.
-
-Powerful tool for programmers only, you can't use this URL as an ordinary wallet RPC.
-
-Check [puissant-api.md](puissant-api.md "mention")for details.
 
 </details>

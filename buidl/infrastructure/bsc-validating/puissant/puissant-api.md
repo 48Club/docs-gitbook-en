@@ -8,9 +8,11 @@ Base url if not specified: `https://puissant-bsc.48.club`
 
 {% swagger method="post" path="/" baseUrl="" summary="Query Gas Price Floor" %}
 {% swagger-description %}
-Override of original eth\_gasPrice endpoint.
+As of the original eth\_gasPrice endpoint.
 
-Query the minimum gas price request for sending transactions via puissant (also applied for Foncé). Transactions sent to puissant with a GasPrice below the floor will be rejected, please make sure your gasPrice (or averaged GasPrice) is equal to or greater than the result.
+Query the minimum gas price request for sending transactions via puissant. If the first tx in your puissant has a GasPrice below the floor, your puissant will be rejected instantly.
+
+It barely change, but this is not a promise.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
