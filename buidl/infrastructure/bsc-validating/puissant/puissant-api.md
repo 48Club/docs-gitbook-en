@@ -2,7 +2,7 @@
 description: Designed as Standard RPC Style Endpoint
 ---
 
-# Puissant API
+# API
 
 Base url if not specified: `https://puissant-bsc.48.club`
 
@@ -12,7 +12,7 @@ As of the original eth\_gasPrice endpoint.
 
 Query the minimum gas price request for sending transactions via puissant. If the first tx in your puissant has a GasPrice below the floor, your puissant will be rejected instantly.
 
-It barely change, but this is not a promise.
+It barely changes, but this is not a promise.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
