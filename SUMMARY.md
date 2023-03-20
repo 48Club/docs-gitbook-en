@@ -21,7 +21,7 @@
   * [BSC Validating](buidl/infrastructure/bsc-validating/README.md)
     * [Puissant](buidl/infrastructure/bsc-validating/puissant/README.md)
       * [API](buidl/infrastructure/bsc-validating/puissant/puissant-api.md)
-      * [Reputation](buidl/infrastructure/bsc-validating/puissant/reputation.md)
+      * [Score](buidl/infrastructure/bsc-validating/puissant/score.md)
       * [SDK](buidl/infrastructure/bsc-validating/puissant/puissant-sdk.md)
   * [BSC RPC](buidl/infrastructure/bsc-validator/README.md)
     * [Gas fee discounted](buidl/infrastructure/bsc-validator/enhanced-rpc.md)

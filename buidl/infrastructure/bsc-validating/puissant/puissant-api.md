@@ -44,7 +44,7 @@ It barely changes, but this is not a promise.
 
 {% swagger method="post" path="/" baseUrl="" summary="Send Private Transactions" %}
 {% swagger-description %}
-Send a Raw Transaction in private mode.
+Send a Raw Transaction in private mode. Subject to [Query Gas Price Floor](puissant-api.md#query-gas-price-floor).
 
 Transaction sent to this RPC will remain inside 48 Club and partner validators without being broadcast, thus will not be packed or only packed by this validator.
 
@@ -188,8 +188,14 @@ The array of hash indicated which transaction(s) are allowed to revert
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/api/v1/puissant/:uuid" baseUrl="https://explorer.48.club" summary="query specific puissant status" %}
+{% swagger method="get" path="/api/v1/puissant/uuid" baseUrl="https://explorer.48.club" summary="query specific puissant status" %}
 {% swagger-description %}
+`uuid`
+
+ is what you get from result of 
+
+[Send Puissant](puissant-api.md#send-puissant)
+
 
 {% endswagger-description %}
 
@@ -229,6 +235,38 @@ The array of hash indicated which transaction(s) are allowed to revert
 {
     "message":"tx not found",
     "status":404
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="" %}
+```javascript
+{
+    "message":"error info",
+    "status":500
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/api/v1/score" baseUrl="https://explorer.48.club" summary="query puissant score for sender/ip" %}
+{% swagger-description %}
+``
+{% endswagger-description %}
+
+{% swagger-parameter in="query" name="address" %}
+sender address. if not provided, score of current ip address will be return. 
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "message":"ok",
+    "status":200,
+    "value":{
+        "query":"1.1.1.1",
+        "score":10,"type":"ip"
+    }
 }
 ```
 {% endswagger-response %}
