@@ -20,7 +20,7 @@ It barely changes, but this is not a promise.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="uint64" required="true" %}
-`73`
+Echo. self maintained.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="jsonrpc" type="String" required="true" %}
@@ -56,7 +56,7 @@ Transaction will be handled fully following validation procedure, including but 
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="uint64" required="true" %}
-1
+Echo. self maintained.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="jsonrpc" required="true" type="String" %}
@@ -122,7 +122,7 @@ If multiple first-tx-of-puissant share one identical sender, it will be consider
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" required="true" type="uint64" %}
-48
+Echo. self maintained.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="jsonrpc" type="String" required="true" %}
