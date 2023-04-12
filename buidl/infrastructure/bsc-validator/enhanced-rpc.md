@@ -10,14 +10,14 @@ Check [github ](https://github.com/BNB48Club/enhanced\_rpc)for details and issue
 
 <details>
 
-<summary>koge-rpc-bsc, gas discount for KOGE holder</summary>
+<summary>1gwei, gas discount for KOGE holder</summary>
 
 Hold [$KOGE](https://bscscan.com/token/0xe6df05ce8c8301223373cf5b969afcb1498c5528) to enjoy discount of BSC gas fee !&#x20;
 
 As far as：&#x20;
 
 1. There is at least 1 KOGE in your wallet(Including wallet balance, DAO-staked and [48er-nft.md](../../../dao/governance/48er-nft.md "mention")).&#x20;
-2. Use this RPC -> `https://koge-rpc-bsc.48.club`
+2. Use this RPC -> `https://1gwei.48.club`
 
 You can enjoy a gas discount up to 80% then.&#x20;
 
