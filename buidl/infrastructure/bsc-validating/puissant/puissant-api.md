@@ -251,7 +251,7 @@ The array of hash indicated which transaction(s) are allowed to revert
 
 {% swagger method="get" path="/api/v1/score" baseUrl="https://explorer.48.club" summary="query puissant score for sender/ip" %}
 {% swagger-description %}
-``
+
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="address" %}
