@@ -7,7 +7,7 @@ Each sender has its own score, which is calculated and applied independently. Th
 Each time a puissant is successfully packaged, the score increases by the value of:
 
 $$
-3*min(10,\frac{gas\_fee}{21000*60gwei})
+3*min(10000,\frac{gas\_fee}{21000*60gwei})
 $$
 
 where the gas\_fee means the actual gas consumed by the first tx in puissant, and 60 gwei in the formula is a configurable item, i.e., the puissant gas\_price\_floor, which can be checked [here](puissant-api.md#query-gas-price-floor).
