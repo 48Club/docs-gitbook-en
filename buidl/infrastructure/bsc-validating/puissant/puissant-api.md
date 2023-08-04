@@ -118,7 +118,7 @@ When the puissant contains one tx which is also in another puissant with higher 
 
 Once packed, those txs with exactly same gasPrice will be placed **consecutively**, but this is **not guaranteed** for the entire puissant.
 
-If multiple first-tx-of-puissant share one identical sender, it will be considered as spamming the puissant service, all these puissants will be ignored except one.
+If you would like to modify an already-sent puissant, you can send another puissant with the same sender (from addr of the first tx) and raise the gasprice for at least 10%, the previous puissant will be overwritten.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="id" required="true" type="uint64" %}
