@@ -2,9 +2,9 @@
 
 The score mechanism has been introduced to encourage effective usage of the puissant service.&#x20;
 
-Each sender has its own score, which is calculated and applied independently. The reputation is a floating-point number with an initial value of 10.&#x20;
+Each IP has its own score, which is calculated and applied independently. The reputation is a floating-point number with an initial value of 10.&#x20;
 
-Each time a puissant is successfully packaged, the score increases by the value of:
+Each time a puissant is successfully packaged, the score of where it is sent from increases by the value of:
 
 $$
 3*min(10000,\frac{gas\_fee}{21000*60gwei})

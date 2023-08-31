@@ -94,30 +94,6 @@ Signed transaction (eth_sendRawTransaction style, signed and RLP-encoded)
 
 {% swagger method="post" path="/" baseUrl="" summary="Send Puissant" %}
 {% swagger-description %}
-Send multiple Transactions in a group, called a puissant.
-
-Txs in a puissant should be ordered following descending gasPrice. Gas price of the first tx in puissant must not be less than [#query-gas-price-floor](puissant-api.md#query-gas-price-floor "mention") and gas used of this tx must not be less than 21000, otherwise the entire puissant will be **failed instantly**.
-
-All txs in the puissant will be packed in the next block sealed by our validators in the same order, unless in one of following cases no txs will be packed:
-
-**CASE EXPIRED**
-
-When current time > `maxTimestamp` , or any tx in the puissant was included in previous block, the puissant expires.
-
-**CASE INVALID**
-
-When gasUsed of the first tx in the bundle is less than 21000, the puissant will be considered invalid.
-
-**CASE REVERTED**
-
-When one tx of the puissant is reverted (for any reason) and this tx-hash is not in `acceptReverting` parameter\*\*.\*\*
-
-**CASE BEATEN**
-
-When the puissant contains one tx which is also in another puissant with higher first-tx-gas-price, the other puissant will be served with priority\*\*.\*\*
-
-Once packed, those txs with exactly same gasPrice will be placed **consecutively**, but this is **not guaranteed** for the entire puissant.
-
 If you would like to modify an already-sent puissant, you can send another puissant with the same sender (from addr of the first tx) and raise the gasprice for at least 10%, the previous puissant will be overwritten.
 {% endswagger-description %}
 
