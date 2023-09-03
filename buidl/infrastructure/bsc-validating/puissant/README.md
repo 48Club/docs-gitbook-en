@@ -37,8 +37,8 @@ Basically, **Puissant** is a service that completes the special ordering of tran
 5. Valid puissants will be forwarded to partner validators through private link.&#x20;
 6. Once successfully accepted, these transactions will be ordered in the block exactly like how they were in the puissant. Although, those transactions with exactly same gasPrice will be placed **consecutively**, but this is **not guaranteed** for the entire puissant.
 7. In default, if any transaction in a puissant gets reverted during block simulation, the entire puissant will be dropped. If it's expected and acceptable result, you need to specify in the request.&#x20;
-8. In case of multiple puissants contains an identical transaction, these puissants were **conflicted** to each other and only one of them could be included in final block. In which case, the puissant with highest bid will get highest priority, only when it is dropped by some reason, top priority in waiting list will be picked.
-9. All txs in the puissant will be packed in the next block sealed by our validators in the same order, unless in one of following cases no txs will be packed:
+8. If multiple puissants contains an identical transaction, these puissants were **conflicted** to each other and only one of them could be included in final block. In which case, the puissant with highest bid will get highest priority, only when it is dropped by some reason, top priority in waiting list will be picked.
+9. Puissants remain in the waitinglist, unless get packed or be dropped for one of following reasons :
 
 **CASE EXPIRED**
 
