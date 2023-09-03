@@ -34,10 +34,10 @@ Basically, **Puissant** is a service that completes the special ordering of tran
 2. All transactions in puissant should pass basic checking as it is like in an ordinary RPC service, including nonce, gas price, balance etc. Otherwise the entire puissant is considered as **invalid**.
 3. The very first transaction in each puissant, aka **the bid**, must have a gas price not less than [the min request](puissant-api.md#query-gas-price-floor), and an actual consumed gas not less than 21000. Also **invalid** if not met.
 4. Txs in a puissant must be ordered nonce ascending, gas price descending and then however as you wish. Breaking nonce order or gas price order will also be considered as **invalid**.
-5. Valid puissants will be forwarded to partner validators through private link.&#x20;
+5. Valid puissants will be forwarded to partner validators through private link and enter **waitinglist**.&#x20;
 6. Once successfully accepted, these transactions will be ordered in the block exactly like how they were in the puissant. Although, those transactions with exactly same gasPrice will be placed **consecutively**, but this is **not guaranteed** for the entire puissant.
 7. In default, if any transaction in a puissant gets reverted during block simulation, the entire puissant will be dropped. If it's expected and acceptable result, you need to specify in the request.&#x20;
-8. If multiple puissants contains an identical transaction, these puissants were **conflicted** to each other and only one of them could be included in final block. In which case, the puissant with highest bid will get highest priority, only when it is dropped by some reason, top priority in waiting list will be picked.
+8. If multiple puissants contain an identical transaction, these puissants are in conflict with each other, and only one of them can be included in the final block. In this scenario, the puissant with the highest bid will receive the highest priority. If, for any reason, the top puissant is removed from consideration, then the next puissant in line will be given top priority. Otherwise, the other conflicting puissants will be excluded at the end of this block period.
 9. Puissants remain in the waitinglist, unless get packed or be dropped for one of following reasons :
 
 **CASE EXPIRED**
