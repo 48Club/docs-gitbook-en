@@ -26,6 +26,12 @@ First external partner
 
 Open-Source
 
+## Validating partners
+
+Call this contract [0x5cc05fde1d231a840061c1a2d7e913cedc8eabaf](https://bscscan.com/address/0x5cc05fde1d231a840061c1a2d7e913cedc8eabaf) to query.
+
+This contract is maintained by 48Club.
+
 ## How does it work?
 
 Basically, **Puissant** is a service that completes the special ordering of transactions by accepting off-chain requests, while we use the term **puissant** referring to the concept of **an ordered group of transactions**.
