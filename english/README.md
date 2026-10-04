@@ -9,7 +9,11 @@
 {% hint style="info" %}
 **Is 48 Club a whales club?**
 
-Although many whales are members of 48 Club, it's not a mandatory membership qualification.
+Although many whales are member
+
+
+
+s of 48 Club, it's not a mandatory membership qualification.
 {% endhint %}
 
 {% hint style="info" %}
