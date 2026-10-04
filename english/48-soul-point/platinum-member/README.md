@@ -1,5 +1,5 @@
 ---
-description: Those who have a 48 Soul Point not less than 480
+description: Those who have a 48 Soul Point not less than 710
 ---
 
 # Platinum Member

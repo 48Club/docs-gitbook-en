@@ -11,8 +11,8 @@ The following documentation describes the access permissions and conditions for 
 | **Unsigned Guest**         | 50 cond txs / 9s  | 5 txs / bundle  | -                                       |
 | **Signed Guest (< 48 SP)** | 50 cond txs / 9s  | 6 txs / bundle  | <p>Failure detail,<br>Websocket RPC</p> |
 | **Entry (≥ 48 SP)**        | 100 cond txs / 9s | 10 txs / bundle | <p>Failure detail,<br>Websocket RPC</p> |
-| **Gold (≥ 100 SP)**        | 200 cond txs / 9s | 15 txs / bundle | <p>Failure detail,<br>Websocket RPC</p> |
-| **Platinum (≥ 480 SP)**    | 500 cond txs / 9s | 50 txs / bundle | <p>Failure detail,<br>Websocket RPC</p> |
+| **Gold (≥ 480 SP)**        | 200 cond txs / 9s | 15 txs / bundle | <p>Failure detail,<br>Websocket RPC</p> |
+| **Platinum (≥ 710 SP)**    | 500 cond txs / 9s | 50 txs / bundle | <p>Failure detail,<br>Websocket RPC</p> |
 
 #### Explanation of Terms
 
@@ -55,7 +55,7 @@ func Sign48SPMember(prvKey *ecdsa.PrivateKey, txs []*Transaction) (hexutil.Bytes
 }
 ```
 
-### Signature Result Verification&#x20;
+### Signature Result Verification
 
 {% hint style="info" %}
 For other programming languages, we do not provide code examples. Please use the following example to verify that your signature method is correct.
@@ -73,8 +73,6 @@ the signer privateKey: 48acf19375e8a27309fe5394728abc2eb6d5a0a4feb6b6c53207ca1c2
 
 the sign result: 0x83e4b3a6af20e58315554b5bc38a8398cfca44a75d42973a4454378b0dc9cae63c229b52341d1ddfc4e3ad4360e518c1f1363e2d21fcba507e8e2e10e266edd201
 ```
-
-
 
 ```
 # pip install web3 coincurve
