@@ -1,12 +1,12 @@
 # Auction Transaction Feed
 
-### Update:  <a href="#introduction" id="introduction"></a>
+### Update: <a href="#introduction" id="introduction"></a>
 
 A **filter** was added to the logs and stateDiffs. See [#content-of-logs-and-statediffs](./#content-of-logs-and-statediffs "mention")
 
 **`newPendingAuctions`**: require 48 SP points to subscribe
 
-**`newPendingAuctionsWithState`**: require 480 SP points to subscribe
+**`newPendingAuctionsWithState`**: require 710 SP points to subscribe
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -20,7 +20,7 @@ Subscribing to Auction Feed push notifications requires no complex third-party p
 
 ### How to SendBundle
 
-To submit a bundle that includes a backrun opportunity, use the [eth\_sendBundle](../send-bundle.md#request-parameters) method with the [backrunTarget](../send-bundle.md#request-parameters) parameter configured.&#x20;
+To submit a bundle that includes a backrun opportunity, use the eth\_sendBundle method with the backrunTarget parameter configured.
 
 * Please note that if the target’s gas price is below 1 gwei, it will not be considered a public pool transaction, so you must include it in your bundle’s average gas price calculation to meet the 1 gwei requirement. However, if the target’s gas price exceeds 1 gwei, you should not factor it into your bundle’s average gas price, as it is treated as a public pool transaction.
 
@@ -28,11 +28,11 @@ To submit a bundle that includes a backrun opportunity, use the [eth\_sendBundle
 
 Due to the high frequency of updates, we use gzip compression on the raw data to minimize transmission size and enhance delivery speed. This ensures efficient handling of the Auction Feed’s frequent push notifications.
 
-[Example code](code-example.md#utils) for decompressing gzip data&#x20;
+Example code for decompressing gzip data
 
 #### **Subscription to** `newAuctions`
 
-[Example code here](code-example.md#subscribe-to-newauctions)
+Example code here
 
 This provides essential data to check what a transaction has triggered. It is sufficient for arbitrage strategies, such as those on Uniswap v2 liquidity pools, without requiring simulation.
 
@@ -49,12 +49,12 @@ This provides essential data to check what a transaction has triggered. It is su
 
 #### **Subscription to** `newAuctionsWithStates`
 
-[Example code here](code-example.md#subscribe-to-newauctionswithstates)
+Example code here
 
-This provides advanced data for simulation-based strategies. You can create a state from the current moment and apply the state changes provided in the data. Then, begin your simulation as though it were happening in real time on the target transaction.&#x20;
+This provides advanced data for simulation-based strategies. You can create a state from the current moment and apply the state changes provided in the data. Then, begin your simulation as though it were happening in real time on the target transaction.
 
-* You have to sign current unix timestamp string by your 48SoulPoint EOA [Example code here](code-example.md#utils)
-* How to apply state changes on current StateDB [Example code here](code-example.md#utils)
+* You have to sign current unix timestamp string by your 48SoulPoint EOA Example code here
+* How to apply state changes on current StateDB Example code here
 * `newAuctionsWithStates` has all data in `newAuctions`, plus `states` below
 
 | Field                | Format                         | Description                                       |
@@ -63,10 +63,6 @@ This provides advanced data for simulation-based strategies. You can create a st
 | exp: states.`str(1)` | string (0x address)            | The address of changed state object               |
 | exp: states.`str(2)` | string (0x hash)               | changed Key in a changed state object             |
 | exp: states.`str(3)` | string (0x hash)               | changed Value of Key                              |
-
-
-
-
 
 ### Content of Logs and StateDiffs
 
@@ -89,4 +85,3 @@ If you believe we should include additional topics for the **backrunning auction
 | Swap(index\_topic\_1 bytes32 id, index\_topic\_2 address sender, int128 amount0, int128 amount1, uint160 sqrtPriceX96, uint128 liquidity, int24 tick, uint24 fee)                                                    | 0x40e9cecb9f5f1f1c5b9c97dec2917b7ee92e57ba5563708daca94dd84ad7112f |
 | ModifyLiquidity(index\_topic\_1 bytes32 id, index\_topic\_2 address sender, int24 tickLower, int24 tickUpper, int256 liquidityDelta, bytes32 salt)                                                                   | 0xf208f4912782fd25c7f114ca3723a2d5dd6f3bcc3ac8db5af63baa85f711d5ec |
 | fourmeme Create                                                                                                                                                                                                      | 0x396d5e902b675b032348d3d2e9517ee8f0c4a926603fbc075d3d282ff00cad20 |
-
